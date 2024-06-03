@@ -1,0 +1,20 @@
+<!-- cliente-form.component.html -->
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" formControlName="nombre" id="nombre">
+  </div>
+  <div>
+    <label for="sharedKey">Shared Key:</label>
+    <input type="text" formControlName="sharedKey" id="sharedKey">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" id="email">
+  </div>
+  <div>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" formControlName="telefono" id="telefono">
+  </div>
+  <button type="submit">Crear Cliente</button>
+</form>
